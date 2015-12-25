@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Internet Detector" Icon="C:\Users\ansh\Downloads\i.ico"  Height="444.221" Width="320.862">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+               
+                <MenuItem Header="proxy" Click="proxy_clicked">
+                    
+                </MenuItem>
+                <MenuItem Header="About">
+               </MenuItem>
+                <MenuItem Header="Stop alarm" Click="stopalarm_Click">
+                </MenuItem>
+                
+            </Menu>
+        </DockPanel>
+
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="328" Margin="10,57,-216,0" VerticalAlignment="Top" Width="281"/>
+        <Label x:Name="label" Content="Connection history" HorizontalAlignment="Left" Margin="80,26,-158,0" VerticalAlignment="Top" Width="153"/>
+
+    </Grid>
+</Window>
